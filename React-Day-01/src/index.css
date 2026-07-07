@@ -8,6 +8,7 @@ html,
 body {
   height: 100%;
   width: 100%;
+  padding: .4rem;
 }
 
 button {
@@ -15,4 +16,9 @@ button {
   font-size: 1.5rem;
   font-weight: 700;
   cursor: pointer;
+}
+
+.card-container {
+  gap: 1rem;
+  display: flex;
 }
