@@ -1,13 +1,15 @@
 import React from "react";
+import Button from "./Button";
 
 const App = () => {
   return (
-    <div>
-      <h1>MERN July Internship 2026</h1>
-      <p>
-        The organizer is <strong>Sagar Khatri.</strong>
-      </p>
-    </div>
+    <>
+      <h1>App Component!</h1>
+      <Button color="yellow" name="Create" />
+      <Button color="green" name="Read" />
+      <Button color="blue" name="Update" />
+      <Button color="pink" name="Delete" />
+    </>
   );
 };
 
