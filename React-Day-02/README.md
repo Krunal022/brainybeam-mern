@@ -1,12 +1,30 @@
-# React + Vite
+# 🚀 BrainyBeam MERN - React Day 01
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A beginner-friendly React project built during the BrainyBeam MERN Training. This project covers the fundamentals of setting up a React application with Vite, creating reusable components, passing props, and applying Bootstrap styling.
 
-Currently, two official plugins are available:
+## 🌐 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+👉 **Live Link:** https://brainybeam-react-day-01.vercel.app/
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📚 Topics Covered
+
+- ⚡ Vite React Setup
+- 📦 Project Dependencies Installation
+- ⚛️ React Component Basics
+- 🎨 Bootstrap Integration
+- ♻️ Reusable Card Component
+- 🎯 Props for Button Customization
+
+---
+
+## 📌 Commit Timeline
+
+| Commit           | Description                                       |
+| ---------------- | ------------------------------------------------- |
+| ✅ Initial Setup | Set up base Vite application                      |
+| 📦 Dependencies  | Installed project dependencies                    |
+| ⚛️ React App     | Set up basic React application                    |
+| 🎯 Props         | Customized buttons using props                    |
+| 🎨 Bootstrap     | Added Bootstrap styling & reusable Card component |
