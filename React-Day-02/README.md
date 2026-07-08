@@ -1,30 +1,22 @@
-# 🚀 BrainyBeam MERN - React Day 01
+# 🚀 BrainyBeam MERN - React Day 02
 
-A beginner-friendly React project built during the BrainyBeam MERN Training. This project covers the fundamentals of setting up a React application with Vite, creating reusable components, passing props, and applying Bootstrap styling.
+A React Router DOM practice project built during the BrainyBeam MERN Training. This project focuses on client-side routing, page navigation, nested layouts, reusable folder structure, and rendering dynamic data using the `map()` method.
 
 ## 🌐 Live Demo
 
-👉 **Live Link:** https://brainybeam-react-day-01.vercel.app/
+👉 **Live Link:** https://brainybeam-react-day-02.vercel.app/
 
 ---
 
 ## 📚 Topics Covered
 
-- ⚡ Vite React Setup
-- 📦 Project Dependencies Installation
-- ⚛️ React Component Basics
-- 🎨 Bootstrap Integration
-- ♻️ Reusable Card Component
-- 🎯 Props for Button Customization
-
----
-
-## 📌 Commit Timeline
-
-| Commit           | Description                                       |
-| ---------------- | ------------------------------------------------- |
-| ✅ Initial Setup | Set up base Vite application                      |
-| 📦 Dependencies  | Installed project dependencies                    |
-| ⚛️ React App     | Set up basic React application                    |
-| 🎯 Props         | Customized buttons using props                    |
-| 🎨 Bootstrap     | Added Bootstrap styling & reusable Card component |
+- ⚛️ React Router DOM Setup
+- 📂 Organized Project Structure (`components` & `pages`)
+- 🌐 BrowserRouter Configuration
+- 🛣️ Routes & Route Components
+- 🔗 Link Navigation
+- 📄 Page Routing with `path` & `element`
+- 🚫 404 Page (`path="*"`)
+- 🧩 Nested Routes using `Outlet`
+- 🔄 Programmatic Navigation using `useNavigate`
+- 📋 Rendering Products using the `map()` Method
