@@ -1,7 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
+import Login from "./Pages/Login";
 
 const Navbar = () => {
+  let navigate = useNavigate();
+
   return (
     <nav className="navbar navbar-expand-lg ">
       <div className="container-fluid">
@@ -46,10 +49,18 @@ const Navbar = () => {
               placeholder="Search"
               aria-label="Search"
             />
-            <button className="btn btn-outline-success me-2" type="submit">
+            <button
+              onClick={() => navigate("/login")}
+              className="btn btn-outline-success me-2"
+              type="submit"
+            >
               Login
             </button>
-            <button className="btn btn-outline-success" type="submit">
+            <button
+              onClick={() => navigate("/register")}
+              className="btn btn-outline-success"
+              type="submit"
+            >
               Register
             </button>
           </form>
