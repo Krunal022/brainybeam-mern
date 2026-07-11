@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Login = () => {
+  const [loginData, setLoginData] = useState({});
+
+  const loginHandler = (e) => {
+    e.preventDefault();
+    setLoginData({ email: "", password: "" });
+    console.log(loginData);
+  };
+
   return (
     <div className="container py-5">
       <div className="row justify-content-center">
@@ -10,11 +18,16 @@ const Login = () => {
             <div className="card-body p-5">
               <h1 className="fw-bold mb-4">Login</h1>
 
-              <form>
+              <form onSubmit={loginHandler}>
                 {/* Email */}
                 <div className="mb-3">
                   <label className="form-label">Email address</label>
                   <input
+                    onChange={(e) =>
+                      setLoginData({ ...loginData, email: e.target.value })
+                    }
+                    name="email"
+                    value={loginData.email}
                     type="email"
                     className="form-control"
                     placeholder="Enter email"
@@ -28,6 +41,11 @@ const Login = () => {
                 <div className="mb-4">
                   <label className="form-label">Password</label>
                   <input
+                    onChange={(e) =>
+                      setLoginData({ ...loginData, password: e.target.value })
+                    }
+                    name="password"
+                    value={loginData.password}
                     type="password"
                     className="form-control"
                     placeholder="Enter password"
