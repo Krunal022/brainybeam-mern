@@ -21,6 +21,9 @@ button {
 .card-container {
   gap: 1rem;
   display: flex;
+  padding: 1rem 0;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
 }
 
