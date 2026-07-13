@@ -1,14 +1,34 @@
+import axios from "axios";
 import React from "react";
+import { useState } from "react";
+import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   let navigate = useNavigate();
+
+  const [backendData, setBackendData] = useState();
+
+  const BackendAPI = async () => {
+    try {
+      const response = await axios.get("http://localhost:3000/");
+      console.log(response.data);
+      setBackendData(response.data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  useEffect(() => {
+    BackendAPI();
+  }, []);
+
   return (
     <section className="container py-5">
       <div className="row align-items-center min-vh-100">
         <div className="col-lg-6">
           <span className="badge bg-primary-subtle text-primary rounded-pill px-3 py-2 mb-3 fs-6">
-            New Collection 2025
+            from Backend › {backendData}
           </span>
 
           <h1
