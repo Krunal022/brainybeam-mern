@@ -1,12 +1,17 @@
+import axios from "axios";
 import React, { useState } from "react";
 
 const Register = () => {
   const [registerData, setregisterData] = useState({});
 
-  const submitHandler = (e) => {
+  const submitHandler = async (e) => {
     e.preventDefault();
     console.log(registerData);
     setregisterData({ name: "", phone: "", email: "", password: "" });
+
+    const passData = await axios.post("http://localhost:3000/register-data", {
+      registerData,
+    });
   };
 
   return (
